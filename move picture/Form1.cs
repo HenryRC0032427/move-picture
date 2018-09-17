@@ -27,8 +27,8 @@ namespace move_picture
         //up
         private void button4_Click(object sender, EventArgs e)
         {
-
-            pictureBox2.Location = new Point(pictureBox2.Location.X, pictureBox2.Location.Y - 5);
+            if (pictureBox2.Location.Y > 5)
+               pictureBox2.Location = new Point(pictureBox2.Location.X, pictureBox2.Location.Y - 5);
         }
 
         //left
@@ -41,7 +41,8 @@ namespace move_picture
         //down
         private void button3_Click(object sender, EventArgs e)
         {
-            pictureBox2.Location = new Point(pictureBox2.Location.X, pictureBox2.Location.Y + 5);
+            if (pictureBox2.Location.Y + 5 < ClientRectangle.Height - pictureBox2.Width)
+                pictureBox2.Location = new Point(pictureBox2.Location.X, pictureBox2.Location.Y + 5);
         }
     }
 }
