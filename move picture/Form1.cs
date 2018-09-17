@@ -17,17 +17,34 @@ namespace move_picture
             InitializeComponent();
         }
 
+        //right
         private void button1_Click(object sender, EventArgs e)
         {
+            if(pictureBox2.Location.X + 110 < ClientRectangle.Width)
             pictureBox2.Location = new Point(pictureBox2.Location.X + 5, pictureBox2.Location.Y);
+        }
+
+        //up
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            pictureBox2.Location = new Point(pictureBox2.Location.X, pictureBox2.Location.Y - 5);
+        }
+
+        //left
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(pictureBox2.Location.X > 0)
+            pictureBox2.Location = new Point(pictureBox2.Location.X - 5, pictureBox2.Location.Y);
+        }
+
+        //down
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Location = new Point(pictureBox2.Location.X, pictureBox2.Location.Y + 5);
         }
     }
 }
-private void button1_Click(object sender, EventArgs e)
-{
-    pictureBox2.Location = new Point(pictureBox2.Location.X + 5, pictureBox2.Location.Y);
-}
-    }
-}
+
 
            
