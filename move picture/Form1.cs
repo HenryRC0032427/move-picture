@@ -21,21 +21,12 @@ namespace move_picture
         {
             pictureBox2.Location = new Point(pictureBox2.Location.X + 5, pictureBox2.Location.Y);
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            pictureBox2.Location = new Point(pictureBox2.Location.X, pictureBox2.Location.Y - 5);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            pictureBox2.Location = new Point(pictureBox2.Location.X - 5, pictureBox2.Location.Y);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            pictureBox2.Location = new Point(pictureBox2.Location.X, pictureBox2.Location.Y + 5);
-        }
+    }
+}
+private void button1_Click(object sender, EventArgs e)
+{
+    pictureBox2.Location = new Point(pictureBox2.Location.X + 5, pictureBox2.Location.Y);
+}
     }
 }
 
